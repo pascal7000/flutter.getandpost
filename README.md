@@ -1,16 +1,36 @@
-# barkaday
+CSC315 Remote Demo App 🚀
+A Flutter application built for CSC315 that demonstrates consuming a REST API using the Repository Pattern. The app fetches data from JSONPlaceholder and displays it in a clean, scrollable list.
 
-A new Flutter project.
+📱 Screenshots
+<img width="740" height="687" alt="screenshot" src="https://github.com/user-attachments/assets/1340d693-e325-4b15-a39d-810159a9229b" />
 
-## Getting Started
+✨ Features
+GET Request: Fetches a list of posts from https://jsonplaceholder.typicode.com/posts.
+POST Request: Includes logic to create new posts via the Repository.
+Asynchronous UI: Uses FutureBuilder to handle loading states and data display.
+Clean Architecture: Separates logic into distinct layers (UI, Data, Logic).
+🛠️ Project Structure
+The project follows a modular structure for better maintainability:
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+lib/
+├── main.dart                   # UI Layer (FutureBuilder & ListView)
+├── models/
+│   └── post.dart               # Data Model (fromJson / toJson)
+└── repository/
+└── post_repository.dart    # API Logic (http.get / http.post)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+📦 Dependencies
+http: ^1.x.x
+flutter/material.dart
+🚀 How to Run
+Clone the repository:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+git clone [https://github.com/kem-codes/csc315_remote_demo.git](https://github.com/kem-codes/csc315_remote_demo.git)
+cd csc315_remote_demo
+Install dependencies:
+
+flutter pub get
+Run the app: (Recommended to run on Chrome if Android emulators are not set up)
+
+flutter run -d chrome

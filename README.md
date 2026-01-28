@@ -26,7 +26,7 @@ flutter/material.dart
 🚀 How to Run
 Clone the repository:
 
-git clone [https://github.com/kem-codes/csc315_remote_demo.git](https://github.com/kem-codes/csc315_remote_demo.git)
+git clone https://github.com/pascal7000/flutter.getandpost
 cd csc315_remote_demo
 Install dependencies:
 
@@ -34,3 +34,4 @@ flutter pub get
 Run the app: (Recommended to run on Chrome if Android emulators are not set up)
 
 flutter run -d chrome
+
